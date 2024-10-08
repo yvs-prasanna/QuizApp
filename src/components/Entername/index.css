@@ -1,0 +1,82 @@
+.EnterName-Block {
+  align-self: center;
+  margin-top: 15%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  width: 50%;
+  background-color: #0a012e;
+  height: 40%;
+  border-radius: 20px;
+}
+@media (max-width: 768px) {
+  .EnterName-Block {
+    align-self: center;
+    margin-top: 100px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 90%;
+    background-color: #0a012e;
+    height: 40%;
+    border-radius: 20px;
+  }
+  .EnterName-text {
+    color: white;
+    font-size: 14px;
+    font-weight: bold;
+    font-family: Roboto;
+  }
+  .input-Block {
+    width: 80%;
+    padding: 15px;
+    color: #0a012e;
+    border-radius: 8px;
+    font-size: 15px;
+    font-weight: bold;
+    font-family: Roboto;
+    outline: none;
+  }
+  .name-submit-button {
+    margin-top: 15px;
+    background-color: rgb(1, 255, 234);
+    color: #0a012e;
+    border-radius: 20px;
+    padding: 10px;
+    font-size: 10px;
+    font-family: Roboto;
+    font-weight: bold;
+    cursor: pointer;
+  }
+}
+.EnterName-text {
+  margin-top: -10px;
+  color: white;
+  font-size: 45px;
+  font-weight: bold;
+  font-family: Roboto;
+}
+.input-Block {
+  width: 80%;
+  padding: 15px;
+  color: #0a012e;
+  border-radius: 8px;
+  font-size: 30px;
+  font-weight: bold;
+  font-family: Roboto;
+  outline: none;
+}
+.name-submit-button {
+  margin-top: 25px;
+  background-color: rgb(1, 255, 234);
+  color: #0a012e;
+  width: 30%;
+  border-radius: 20px;
+  padding: 10px;
+  font-size: 25px;
+  font-family: Roboto;
+  font-weight: bold;
+  cursor: pointer;
+}

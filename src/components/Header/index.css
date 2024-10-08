@@ -1,0 +1,49 @@
+.HeaderBlock {
+  position: fixed;
+  background-color: #0a012e;
+  display: flex;
+  padding: 20px;
+  height: 10%;
+  width: 100%;
+  justify-content: center;
+  align-items: center;
+  z-index: 1000; /* Ensures it stays on top */
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Soft shadow */
+}
+.Insideheader {
+  width: 90%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.title {
+  font-size: 50px;
+  font-weight: bold;
+  font-family: fantasy 2;
+  color: white;
+}
+@media (max-width: 750px) {
+  .HeaderBlock {
+    position: fixed;
+    z-index: 1000;
+    background-color: #0a012e;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 20px;
+  }
+  .Insideheader {
+    width: 90%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  .title {
+    font-size: 15px;
+    font-weight: bold;
+    font-family: fantasy 2;
+    color: white;
+  }
+}
