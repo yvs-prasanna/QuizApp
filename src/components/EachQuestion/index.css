@@ -94,3 +94,7 @@
   font-size: 19px;
   font-family: Roboto;
 }
+
+.result {
+  opacity: 0;
+}
