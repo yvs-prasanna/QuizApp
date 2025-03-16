@@ -1,5 +1,7 @@
 import { Component } from "react";
 
+import { Navigate } from "react-router-dom";
+
 import Cookies from "js-cookie";
 
 import "./index.css";
@@ -49,6 +51,7 @@ class EachQuestion extends Component {
     messege: "",
     buttonText: "Submit",
     isCompleted: false,
+    redirectToStart: false,
   };
   c;
 
@@ -89,6 +92,7 @@ class EachQuestion extends Component {
           isCompleted: true,
           isCorrect: true,
           buttonText: `Test Completed Thank You ${name}`,
+          redirectToStart: true,
         });
       } else {
         this.setState((p) => ({ activeId: p.activeId + 1 }));
@@ -109,9 +113,21 @@ class EachQuestion extends Component {
   };
 
   render() {
-    const { activeId, messege, isShow, buttonText, isCorrect, selectedOption } =
-      this.state;
+    const {
+      activeId,
+      messege,
+      isShow,
+      buttonText,
+      isCorrect,
+      selectedOption,
+      redirectToStart,
+    } = this.state;
     const { id, question, options } = Questions[activeId];
+
+    if (redirectToStart) {
+      return <Navigate to="/" />; // Redirect when quiz ends
+    }
+
     const messegeClassname = isCorrect ? "correct-message" : "wrong-messege";
     return (
       <div className="Question-Page">
